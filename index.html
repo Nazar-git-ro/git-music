@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music App Mobile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b10;
+    color: white;
+}
+
+/* PHONE FRAME */
+.app {
+    max-width: 420px;
+    margin: auto;
+    min-height: 100vh;
+    background: #0f0f14;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP BAR */
+.top {
+    padding: 15px;
+    background: #121218;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fa233b;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/* CARD */
+.card {
+    background: #1a1a22;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #222;
+}
+
+/* TITLE */
+.title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+    height: 160px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* BOTTOM NAV */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background: #121218;
+    padding: 10px 0;
+    border-top: 1px solid #222;
+}
+
+.nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.nav button.active {
+    opacity: 1;
+    color: #1DB954;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- TOP -->
+<div class="top">🎧 My Music App</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <div class="card">
+        <div class="title">The Right Road</div>
+        <iframe src="https://embed.music.apple.com/ua/song/the-right-road/1154388457?l=uk"></iframe>
+    </div>
+
+    <div class="card">
+        <div class="title">А що</div>
+        <iframe src="https://embed.music.apple.com/ua/song/%D0%B0-%D1%89%D0%BE/1745509383?l=uk"></iframe>
+    </div>
+
+    <div class="card">
+        <div class="title">З якого ти поверху неба</div>
+        <iframe src="https://embed.music.apple.com/ua/song/%D0%B7-%D1%8F%D0%BA%D0%BE%D0%B3%D0%BE-%D1%82%D0%B8-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D1%83-%D0%BD%D0%B5%D0%B1%D0%B0/1807756270?l=uk"></iframe>
+    </div>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="nav">
+    <button class="active">🏠 Home</button>
+    <button>🔥 Trending</button>
+    <button>🎵 Library</button>
+</div>
+
+</div>
+
+</body>
+</html>
